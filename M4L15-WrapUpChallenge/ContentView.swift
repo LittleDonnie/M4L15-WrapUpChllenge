@@ -7,11 +7,33 @@
 
 import SwiftUI
 
+struct Books {
+    var title: String
+    var author: String
+}
+
+
+var myLibrary = [Books] ()
+
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, Monty!")
+        
+        
+        
+        Text(AssignTitle())
             .padding()
+        
+        
+        
     }
+    
+    func AssignTitle () -> String{
+        var myLibrary = [Books] ()
+        myLibrary[0].title = "Monty is confusedMonty is confusedMonty is confused"
+        return(myLibrary[0].title )
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
